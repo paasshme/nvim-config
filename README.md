@@ -1,5 +1,21 @@
 # kickstart.nvim
 
+### Linux non root install :)
+
+```
+# Neovim: (require glibc, check glibc version first)
+curl https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+
+# need java 21 for LSP
+
+# Nerd font
+curl https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
+# install to .local/share/fonts then:
+fc-cache -f -v
+# rip grep
+curl https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
+```
+
 ## Introduction
 
 A starting point for Neovim that is:
@@ -197,24 +213,7 @@ sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip neovim
 ```
 </details>
-#### Linux non root install :)
 
-```
-# Neovim: (require glibc, check glibc version first)
-curl https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-
-# need java 21 for LSP
-
-# Nerd font
-curl https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip
-# rip grep
-curl https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
-```
-```
-#### Linux Install
-<details><summary>Ubuntu Install Steps</summary>
-
-```
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip neovim
